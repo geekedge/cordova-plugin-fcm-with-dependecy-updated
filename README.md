@@ -62,7 +62,7 @@ Default preferences:
 
 ```sh
 npm install -g cordova@latest # Version 9 or higher required
-npm uninstall @ionic-native/fcm # Ionic support is included and conflicts with @ionic-native's implementation.
+npm uninstall @awesome-cordova-plugins/fcm # Ionic support is included and conflicts with @ionic-native's implementation.
 cordova plugin add cordova-plugin-fcm-with-dependecy-updated
 ```
 
@@ -70,7 +70,7 @@ Complete:
 
 ```sh
 npm install -g cordova@latest # Version 9 or higher required
-npm uninstall @ionic-native/fcm # Ionic support is included and conflicts with @ionic-native's implementation.
+npm uninstall @awesome-cordova-plugins/fcm # Ionic support is included and conflicts with @ionic-native's implementation.
 cordova plugin add cordova-plugin-fcm-with-dependecy-updated \
   --variable ANDROID_DEFAULT_NOTIFICATION_ICON="@mipmap/ic_launcher" \
   --variable ANDROID_FIREBASE_BOM_VERSION="26.0.0" \
@@ -85,7 +85,7 @@ Default preferences:
 
 ```sh
 npm install -g cordova@latest # Version 9 or higher required
-npm uninstall @ionic-native/fcm # Ionic support is included and conflicts with @ionic-native's implementation.
+npm uninstall @awesome-cordova-plugins/fcm # Ionic support is included and conflicts with @ionic-native's implementation.
 ionic cordova plugin add cordova-plugin-fcm-with-dependecy-updated
 ```
 
@@ -93,7 +93,7 @@ Complete:
 
 ```sh
 npm install -g cordova@latest # Version 9 or higher required
-npm uninstall @ionic-native/fcm # Ionic support is included and conflicts with @ionic-native's implementation.
+npm uninstall @awesome-cordova-plugins/fcm # Ionic support is included and conflicts with @ionic-native's implementation.
 ionic cordova plugin add cordova-plugin-fcm-with-dependecy-updated \
   --variable ANDROID_DEFAULT_NOTIFICATION_ICON="@mipmap/ic_launcher" \
   --variable ANDROID_FIREBASE_BOM_VERSION="26.0.0" \
@@ -321,7 +321,7 @@ import { FCM } from "cordova-plugin-fcm-with-dependecy-updated/ionic/v4";
 
 It brings the same behavior as the native implementation, except for `FCM.onNotification()` and `FCM.onTokenRefresh()`, which gain rxjs' Observable support.
 
-To avoid confusion, it's suggested to also remove the redundant @ionic-native/fcm package.
+To avoid confusion, it's suggested to also remove the redundant @awesome-cordova-plugins/fcm package.
 
 ##### FCM.onNotification()
 

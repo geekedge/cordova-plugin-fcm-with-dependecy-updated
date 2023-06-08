@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core'
 import { Observable, Subject } from 'rxjs'
-import { IonicNativePlugin } from '@ionic-native/core'
+import { IonicNativePlugin } from '@awesome-cordova-plugins/core'
 import type { FCMPlugin } from '../../www/FCMPlugin'
 import type { IChannelConfiguration } from '../../www/IChannelConfiguration'
 import type { INotificationPayload } from '../../www/INotificationPayload'
