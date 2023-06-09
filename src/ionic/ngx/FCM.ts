@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core'
 import { Observable, Subject } from 'rxjs'
-import { IonicNativePlugin } from '@awesome-cordova-plugins/core'
+import { AwesomeCordovaNativePlugin } from '@awesome-cordova-plugins/core'
 import type { FCMPlugin } from '../../www/FCMPlugin'
 import type { IChannelConfiguration } from '../../www/IChannelConfiguration'
 import type { INotificationPayload } from '../../www/INotificationPayload'
@@ -17,14 +17,14 @@ export class FCM {
     public static plugin: string = 'cordova-plugin-fcm-with-dependecy-updated'
     public static pluginRef: string = 'FCM'
     public static repo: string =
-        'https://github.com/andrehtissot/cordova-plugin-fcm-with-dependecy-updated'
+        'https://github.com/geekedge/cordova-plugin-fcm-with-dependecy-updated'
     public static platforms: string[] = ['Android', 'iOS']
-    public static installed: () => boolean = IonicNativePlugin.installed
-    public static getPlugin: () => any = IonicNativePlugin.getPlugin
-    public static getPluginName: () => string = IonicNativePlugin.getPluginName
-    public static getPluginRef: () => string = IonicNativePlugin.getPluginRef
-    public static getPluginInstallName: () => string = IonicNativePlugin.getPluginInstallName
-    public static getSupportedPlatforms: () => string[] = IonicNativePlugin.getSupportedPlatforms
+    public static installed: () => boolean = AwesomeCordovaNativePlugin.installed
+    public static getPlugin: () => any = AwesomeCordovaNativePlugin.getPlugin
+    public static getPluginName: () => string = AwesomeCordovaNativePlugin.getPluginName
+    public static getPluginRef: () => string = AwesomeCordovaNativePlugin.getPluginRef
+    public static getPluginInstallName: () => string = AwesomeCordovaNativePlugin.getPluginInstallName
+    public static getSupportedPlatforms: () => string[] = AwesomeCordovaNativePlugin.getSupportedPlatforms
 
     /** @copyFrom typings/FCMPlugin.d.ts FCMPlugin clearAllNotifications */
     public clearAllNotifications(): Promise<void> {
